@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparação de Preços</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #results {
+      margin-top: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Comparação de Preços</h1>
+
+
+  <label for="carModel">Carro:</label>
+  <input type="text" id="carModel" placeholder="Digite o modelo do carro">
+
+
+
+  <label for="year">Ano:</label>
+
+  <input type="number" id="year" placeholder="Digite o ano do carro">
+
+  <button onclick="searchCar()">Pesquisar</button>
+
+  <div id="results"></div>
+
+
+
+  <script>
+    function searchCar() {
+      // Aqui você implementaria a lógica para interagir com a API da tabela Fipe
+      // e exibir os resultados na div com id "results"
+      // Pode ser necessário utilizar AJAX para fazer requisições assíncronas
+
+      // Exemplo fictício para ilustrar
+      const carModel = document.getElementById('carModel').value;
+      const year = document.getElementById('year').value;
+
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = `<p>Resultados para ${carModel} - ${year}</p>`;
+
+      // Aqui você faria a requisição à API da tabela Fipe e processaria os resultados
+      // para exibição na div de resultados
+    }
+  </script>
+</body>
+
+</html>
